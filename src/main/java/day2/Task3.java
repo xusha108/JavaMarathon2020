@@ -11,10 +11,13 @@ public class Task3 {
         int i = a + 1;
 
         while (i > a && i < b) {
-            if (i % 5 == 0 && i % 10 != 0) {
+            if (i % 5 == 0 && i % 10 != 0)
                 System.out.print(i + " ");
-            }
+
             i++;
+        }
+        if (a >= b) {
+            System.out.print("Некорректный ввод");
         }
     }
 }

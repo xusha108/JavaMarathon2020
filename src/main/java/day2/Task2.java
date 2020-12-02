@@ -21,5 +21,8 @@ public class Task2 {
                 System.out.print(i + " ");
             }
         }
+        if (a >= b) {
+            System.out.print("Некорректный ввод");
+        }
     }
 }
