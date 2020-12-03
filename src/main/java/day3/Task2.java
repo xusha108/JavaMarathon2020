@@ -13,7 +13,7 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         double y = 1;
 
-        while (y != 0) {
+        while (true) {
             double x = scanner.nextDouble();
             y = scanner.nextDouble();
             if( y == 0) {
@@ -22,5 +22,6 @@ public class Task2 {
             System.out.println( x / y);
             continue;
         }
+        scanner.close();
     }
 }

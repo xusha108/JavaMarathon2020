@@ -23,32 +23,33 @@ public class Task1 {
                 case "Владивосток":
                 case "Ростов":
                     System.out.println("Россия");
-                    continue;
+                    break;
 
                 case "Рим":
                 case "Милан":
                 case "Турин":
                     System.out.println("Италия");
-                    continue;
+                    break;
 
                 case "Ливерпуль":
                 case "Манчестер":
                 case "Лондон":
                     System.out.println("Англия");
-                    continue;
+                    break;
 
                 case "Берлин":
                 case "Мюнхен":
                 case "Кёльн":
                     System.out.println("Германия");
-                    continue;
+                    break;
 
                 case "Stop":
-                    continue;
+                    break;
 
                 default:
                     System.out.println("Неизвестная страна");
             }
         }
+        scanner.close();
     }
 }

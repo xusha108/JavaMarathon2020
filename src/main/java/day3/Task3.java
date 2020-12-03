@@ -22,5 +22,6 @@ public class Task3 {
 
             System.out.println(x / y);
         }
+        scanner.close();
     }
 }
