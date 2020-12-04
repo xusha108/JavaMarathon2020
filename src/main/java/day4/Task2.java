@@ -7,7 +7,6 @@
 //
 //Использовать сортировку запрещено.
 
-
 package day4;
 
 import java.util.Random;
@@ -25,39 +24,27 @@ public class Task2 {
         }
 
         int max = numbers[0];
+        int min = numbers[0];
+        int count = 0;
+        int sum = 0;
+
         for (int num : numbers) {
             if (num > max) {
                 max = num;
             }
-        }
-        System.out.println("Наибольший элемент массива: " + max);
-
-        int min = numbers[0];
-        for (int num : numbers) {
             if (num < min) {
                 min = num;
             }
-        }
-        System.out.println("Наименьший элемент массива: " + min);
-
-        int count = 0;
-        for (int num : numbers) {
             int last = num % 10;
+
             if (last == 0) {
                 count++;
-            }
-        }
-        System.out.println("количество элементов массива, оканчивающихся на 0: " + count);
-
-        int sum = 0;
-        for (int num : numbers) {
-            int last = num % 10;
-
-            if (last == 0) {
                 sum = sum + num;
             }
-
         }
+        System.out.println("Наибольший элемент массива: " + max);
+        System.out.println("Наименьший элемент массива: " + min);
+        System.out.println("количество элементов массива, оканчивающихся на 0: " + count);
         System.out.println("сумма элементов массива, оканчивающихся на 0: " + sum);
 
         scanner.close();

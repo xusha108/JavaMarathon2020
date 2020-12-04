@@ -16,6 +16,7 @@
 
 package day4;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Task4 {
@@ -25,9 +26,8 @@ public class Task4 {
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = rand.nextInt(10);
-            System.out.print(arr[i] + ", ");
         }
-        System.out.println();
+        System.out.println(Arrays.toString(arr));
 
         int sumMax = 0;
         int indexMax = 0;
@@ -38,9 +38,12 @@ public class Task4 {
                 sum += arr[j];
             }
             System.out.println(sum);
-
+            if (sumMax < sum) {
+                sumMax = sum;
+                indexMax = i;
+            }
         }
-        System.out.println("sumMax: "+sumMax+" indexMax: "+indexMax);
+        System.out.println("sumMax: " + sumMax + " indexMax: " + indexMax);
     }
 }
 
