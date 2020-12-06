@@ -28,10 +28,12 @@ public class Motorbike {
     }
 
     public int yearDifference(int userYear) {
-        int difference = year - userYear;
-        return difference;
-
+        if ( year -userYear < 0) {
+            return 0;
+        } else {
+            int difference = year -userYear;
+            return difference;
+        }
     }
-
 }
 
