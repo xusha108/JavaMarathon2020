@@ -14,20 +14,23 @@ package day8;
 public class Task1 {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 20000; i++) {
-            StringBuilder sb = new StringBuilder();
             sb.append(i);
-            System.out.print(sb.toString() + " ");
+            sb.append(" ");
         }
+        System.out.print(sb.toString());
+
         long estimatedTime = System.nanoTime() - startTime;
         System.out.println();
         System.out.println(estimatedTime);
 
         long startTime1 = System.nanoTime();
+        String str = new String();
         for (int i = 0; i < 20000; i++) {
-            String str = " ";
-            System.out.print(i + str);
+            str += i + " ";
         }
+        System.out.print(str);
         long estimatedTime1 = System.nanoTime() - startTime1;
         System.out.println();
         System.out.println(estimatedTime1);
