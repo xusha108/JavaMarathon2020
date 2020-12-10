@@ -3,6 +3,11 @@ package day9.Task2;
 public class Circle extends Figure {
     private int radius;
 
+    public Circle(int radius, String color ) {
+        super(color);
+        this.radius = radius;
+    }
+
     @Override
     public double area() {
         return Math.PI * (radius * radius);
@@ -13,8 +18,4 @@ public class Circle extends Figure {
         return Math.PI * 2 * radius;
     }
 
-    public Circle(int radius, String color) {
-        super.setColor(color);
-        this.radius = radius;
-    }
 }

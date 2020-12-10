@@ -5,6 +5,13 @@ public class Triangle extends Figure {
     private int b;
     private int c;
 
+    public Triangle(int a, int b, int c, String color) {
+        super(color);
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
     @Override
     public double area() {
         double pp = (a + b + c) / 2.0;
@@ -16,10 +23,5 @@ public class Triangle extends Figure {
         return a + b + c;
     }
 
-    public Triangle(int a, int b, int c, String color) {
-        super.setColor(color);
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
+
 }
