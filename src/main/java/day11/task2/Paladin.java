@@ -5,7 +5,6 @@ public class Paladin extends Hero implements PhysAttack, Healer {
     private double healTeammate;
 
     public Paladin() {
-        super();
         super.setPhysDef(0.5);
         super.setMagicDef(0.2);
         this.healHimself = 25;

@@ -2,7 +2,6 @@ package day11.task2;
 
 public class Warrior extends Hero implements PhysAttack {
     public Warrior() {
-        super();
         super.setMagicDef(1);
         super.setPhysDef(0.8);
     }

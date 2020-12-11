@@ -4,7 +4,6 @@ public class Magician extends Hero implements PhysAttack, MagicAttack {
     private int magicAtt;
 
     public Magician() {
-        super();
         super.setPhysDef(0);
         super.setMagicDef(80);
         this.magicAtt = 20;

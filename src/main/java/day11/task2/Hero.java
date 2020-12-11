@@ -41,7 +41,6 @@ public abstract class Hero {
 
     @Override
     public String toString() {
-        System.out.println(getClass()+" Здоровье " + health );
-        return "Здоровье " + health;
+        return  getClass() +"Здоровье " + health;
     }
 }
