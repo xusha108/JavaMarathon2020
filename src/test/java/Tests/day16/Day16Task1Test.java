@@ -11,7 +11,7 @@
 //
 //    @Test
 //    void test1() {
-//        File file = new File("src/test/resources/D16T1_1.txt");
+//        File file = new File("src/test/resources/D16T1_1.text.txt");
 //        Task1.printResult(file);
 //        Assertions.assertEquals("23.285714285714285 --> 23,286", getOutput(),
 //                "Файл содержит: 5 2 8 34 1 36 77 0 43 98");

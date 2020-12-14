@@ -11,14 +11,14 @@
 //
 //    @Test
 //    void test1() {
-//        File file = new File("src/test/resources/D16T2_1.txt");
+//        File file = new File("src/test/resources/D16T2_1.text.txt");
 //        Task2.printResult(file);
 //        Assertions.assertEquals("2543" + System.lineSeparator(), getOutput());
 //    }
 //
 //    @Test
 //    void test2() {
-//        File file = new File("src/test/resources/D16T2_2.txt");
+//        File file = new File("src/test/resources/D16T2_2.text.txt");
 //        Task2.printResult(file);
 //        Assertions.assertEquals("2486" + System.lineSeparator(), getOutput());
 //    }
