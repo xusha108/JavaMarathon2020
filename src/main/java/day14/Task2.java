@@ -30,7 +30,8 @@ public class Task2 {
         try {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
-                String currentLine = scanner.nextLine();
+                String currentLine = "";
+                currentLine = scanner.nextLine();
                 String[] strNums = currentLine.split(" ");
                 int num = Integer.parseInt(strNums[1]);
 
