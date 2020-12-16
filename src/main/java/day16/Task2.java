@@ -11,11 +11,10 @@ public class Task2 {
     public static void main(String[] args) {
         File file1 = new File("C:\\Users\\comp\\Desktop\\JS\\Java\\JavaMarathon2020\\src\\main\\java\\day16\\file1.txt");
         File file2 = new File("C:\\Users\\comp\\Desktop\\JS\\Java\\JavaMarathon2020\\src\\main\\java\\day16\\file2.txt");
-        calcResult(file1);
-        printResult(file2);
+        printResult(file1);
     }
 
-    public static void calcResult(File file1) {
+    public static void printResult(File file1) {
         try {
             List<Integer> nums = new ArrayList<>();
             List<Double> sums = new ArrayList<>();
@@ -32,7 +31,7 @@ public class Task2 {
             double sum = 0;
             for (int i = 20; i < nums.size(); i = i + 20) {
                 for (int j = i - 20; j < i; j++) {
-                    sum = (sum + nums.get(j)) /20;
+                    sum = (sum + nums.get(j)) / 20;
                     sums.add(sum);
                 }
             }
@@ -50,12 +49,5 @@ public class Task2 {
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         }
-
-    }
-
-
-    public static void printResult(File file2) {
-
-
     }
 }
