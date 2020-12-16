@@ -44,7 +44,7 @@ public class Task1 {
             for (int i = 0; i < nums.size(); i++) {
                 sum += nums.get(i);
             }
-            System.out.println(nums);
+
             System.out.println(sum);
             scanner.close();
         } catch (FileNotFoundException e) {
