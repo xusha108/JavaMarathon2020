@@ -31,9 +31,10 @@ public class Task2 {
             double sum = 0;
             for (int i = 20; i < nums.size(); i = i + 20) {
                 for (int j = i - 20; j < i; j++) {
-                    sum = (sum + nums.get(j)) / 20;
-                    sums.add(sum);
+                    sum = sum + nums.get(j);
                 }
+                sum = sum / 20;
+                sums.add(sum);
             }
             pw2.println(sums + " ");
             pw1.close();
